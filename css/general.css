@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	background-color:#006BBD;
+	font:normal 100%/1.8 'Georgia', serif
+}
+
+body {
+	background-color:#FFF;
+	padding:.5em;
+	border-radius:10px;
+}
+
+h1{
+	margin:0;
+}
+
+p {
+	margin:0;
+	padding-bottom:.5em;
+}
+
+img {
+	width:100%;
+}
+
+.logo {
+	width: 30%;
+	display:block;
+	margin:0 auto;
+	border:#FFF solid 1px;
+}
+
+.btn {
+  background:#0069C2;
+  border-radius: 7px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background:#E0403E;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 35em) {
+	.text {
+		width:60%;
+		display:inline-block;
+		float:right;
+		margin-top:-4em;
+	}
+	
+	.rest {
+		padding-left:.5em;
+		width:35%;
+		display:inline-block;
+	}
+	
+	.logo {
+		margin:0;
+		width:15%;
+		padding:.5em;
+	}
+	
+	.page {
+		display:block;
+		margin-left: auto; 
+		margin-right:auto;
+		width:90%;
+		padding-bottom:1em;
+	}
+
+@media only screen and (min-width: 50em) {
+	.page {
+		width:80%;
+	}
+}
+
+@media only screen and (min-width: 72em) {
+	html{
+		font-size:115%;
+	}
+	
+	.text {
+		padding-right:.5em;
+	}
+	
+	.page {
+		width:70%;
+	}
+}
+
+@media only screen and (min-width: 100em) {
+	html{
+		font-size:125%;
+	}
+}
+
+@media only screen and (min-width: 140em) {
+	html{
+		font-size:150%;
+	}
+}
