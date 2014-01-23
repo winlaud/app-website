@@ -14,18 +14,19 @@
 }
 
 html{
-	background-color:#006BBD;
 	font:normal 100%/1.8 'Georgia', serif
 }
 
 body {
-	background-color:#FFF;
-	padding:.5em;
-	border-radius:10px;
+	margin:0;
 }
 
 h1{
 	margin:0;
+}
+
+h2 {
+	text-align:center;
 }
 
 p {
@@ -44,6 +45,15 @@ img {
 	border:#FFF solid 1px;
 }
 
+div{
+	margin:.3em;
+}
+
+span {
+	width:90%;
+	font-size:2em;
+}
+
 .btn {
   background:#0069C2;
   border-radius: 7px;
@@ -59,7 +69,49 @@ img {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 35em) {
+.page1 {
+	background-color:#006ABC;
+}
+
+.page2{
+	background-color:#FFF;
+}
+
+.page3{
+	background-color:#E0403E;
+}
+
+.carousel{
+	padding-bottom:56.23%; /* Image ratio: height /width * 100 */
+	position:relative;
+}
+
+.carousel-items{
+	padding:0;
+}
+
+.carousel-items img {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+
+.carousel-items [data-state="current"] {
+	z-index:100;
+}
+
+.carousel-items [data-state="incoming"] {
+	z-index:101;
+}
+
+.carousel-buttons {
+	position:absolute;
+	z-index:1000;
+}
+
+
+@media only screen and (min-width: 38em) {
 	.text {
 		width:60%;
 		display:inline-block;
@@ -67,9 +119,16 @@ img {
 		margin-top:-4em;
 	}
 	
+	div {
+		margin:0;
+		padding:1em;
+		overflow:hidden;
+	}
+	
 	.rest {
 		padding-left:.5em;
 		width:35%;
+		float:left;
 		display:inline-block;
 	}
 	
@@ -79,12 +138,27 @@ img {
 		padding:.5em;
 	}
 	
-	.page {
+	.page{
+		margin:0 auto;
 		display:block;
-		margin-left: auto; 
-		margin-right:auto;
 		width:90%;
 		padding-bottom:1em;
+	}
+
+	.page1 {
+		background-color:#006ABC;
+	}
+	
+	.page2{
+		background-color:#FFF;
+	}
+	
+	.page3{
+		background-color:#E0403E;
+	}
+	
+	footer{
+		clear:both;
 	}
 
 @media only screen and (min-width: 50em) {
@@ -100,10 +174,6 @@ img {
 	
 	.text {
 		padding-right:.5em;
-	}
-	
-	.page {
-		width:70%;
 	}
 }
 
