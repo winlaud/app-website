@@ -23,9 +23,11 @@ body {
 
 h1{
 	margin:0;
+	font-size:1.9em;
 }
 
 h2 {
+	margin-top:0;
 	text-align:center;
 }
 
@@ -45,23 +47,21 @@ img {
 	border:#FFF solid 1px;
 }
 
-div{
-	margin:.3em;
-}
-
 span {
 	width:90%;
-	font-size:2em;
+	font-size:1.3em;
 }
 
 .btn {
-  background:#0069C2;
-  border-radius: 7px;
-  font-family: Georgia;
-  color: #ffffff;
-  font-size: 1rem;
-  padding: 10px;
-  text-decoration: none;
+	margin:0;
+	padding:0;
+	background:#0069C2;
+	border-radius: 7px;
+	font-family: Georgia;
+	color: #ffffff;
+	font-size: 1rem;
+	padding: 10px;
+	text-decoration: none;
 }
 
 .btn:hover {
@@ -69,16 +69,11 @@ span {
   text-decoration: none;
 }
 
-.page1 {
-	background-color:#006ABC;
-}
-
-.page2{
-	background-color:#FFF;
-}
-
-.page3{
-	background-color:#E0403E;
+.next,
+.prev {
+	background-color:#0069C2;
+	color:#FFF;
+	border-radius:5px;
 }
 
 .carousel{
@@ -110,24 +105,90 @@ span {
 	z-index:1000;
 }
 
+.vid{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#video-placeholder {
+	position:relative;
+	padding-top:56.25%;
+}
+
+dialog {
+	width:80%;
+	border:2px solid #000;
+	border-radius: 8px;
+	box-shadow:1px 1px 10px rgba(0,0,0,0.5);
+}
+
+dialog::backdrop{
+	background-color:rgba(0,255,0,0.5);
+}
+
+dialog + .backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#btn-open{
+	padding:0;
+	margin:0;
+}
+
+#btn-close {
+	width: 32px;
+	height:32px;
+	border-radius:16px;
+	text-align:center;
+	line-height:24px;
+	border:2px solid #fff;
+	background-color:#000;
+	color:#fff;
+	font-weight:bold;
+	padding:0;
+	box-shadow:1px 1px 3px rgba(0, 0, 0, 0.5);
+	cursor:pointer;
+	position:absolute;
+	top:-16px;
+	right:-16px;
+}
+
+.page{
+	margin-top:2em;
+	padding:.5em;
+}
+
+.page0{
+	margin-top:0;
+}
+
+.page1{
+	background-color:#0060B7;
+}
+
+.page3{
+	background-color:#E0403E;
+}
 
 @media only screen and (min-width: 38em) {
 	.text {
 		width:60%;
 		display:inline-block;
 		float:right;
+		padding-left:.5em;
 		margin-top:-4em;
 	}
 	
 	div {
 		margin:0;
-		padding:1em;
 		overflow:hidden;
 	}
 	
-	.rest {
-		padding-left:.5em;
-		width:35%;
+	#btn-open{
+		margin-left:.8em;
 		float:left;
 		display:inline-block;
 	}
@@ -141,29 +202,36 @@ span {
 	.page{
 		margin:0 auto;
 		display:block;
+	}
+	
+	.page0{
 		width:90%;
 		padding-bottom:1em;
 	}
-
-	.page1 {
-		background-color:#006ABC;
-	}
 	
-	.page2{
-		background-color:#FFF;
-	}
-	
-	.page3{
-		background-color:#E0403E;
+	.carousel{
+		margin:0 auto;
+		display:block;
+		width:100%;
 	}
 	
 	footer{
 		clear:both;
 	}
+	
+	#btn-open{
+		width:38%;
+	}
 
 @media only screen and (min-width: 50em) {
-	.page {
+	.page0 {
 		width:80%;
+	}
+	
+	.carousel{
+		margin:0 auto;
+		display:block;
+		width:100%;
 	}
 }
 
