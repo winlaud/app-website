@@ -174,7 +174,63 @@ dialog + .backdrop {
 	-webkit-transform:translateY(140px);
 }
 
+@-ms-keyframes icon-in {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(140px);	
+	}
+	40%{
+		opacity:1;
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateY(0px);
+	}
+}
+
+@-moz-keyframes icon-in {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(140px);	
+	}
+	40%{
+		opacity:1;
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateY(0px);
+	}
+}
+
+@-o-keyframes icon-in {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(140px);	
+	}
+	40%{
+		opacity:1;
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateY(0px);
+	}
+}
+
 @-webkit-keyframes icon-in {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(140px);	
+	}
+	40%{
+		opacity:1;
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateY(0px);
+	}
+}
+
+@keyframes icon-in {
 	0%{
 		opacity:0;
 		-webkit-transform:translateY(140px);	
@@ -223,7 +279,51 @@ dialog + .backdrop {
 	-webkit-transform-origin:50% 90px;
 }
 
+@-ms-keyframes fish-swim {
+	
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	
+	100%{
+		-webkit-transform:rotate(-360deg);
+	}
+}
+
+@-moz-keyframes fish-swim {
+	
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	
+	100%{
+		-webkit-transform:rotate(-360deg);
+	}
+}
+
+@-o-keyframes fish-swim {
+	
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	
+	100%{
+		-webkit-transform:rotate(-360deg);
+	}
+}
+
 @-webkit-keyframes fish-swim {
+	
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	
+	100%{
+		-webkit-transform:rotate(-360deg);
+	}
+}
+
+@keyframes fish-swim {
 	
 	0%{
 		-webkit-transform: rotate(0deg);
