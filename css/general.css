@@ -156,6 +156,85 @@ dialog + .backdrop {
 	right:-16px;
 }
 
+.icons {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+}
+
+.icons li {
+	display:inline-block;
+	margin: 0 1rem;
+}
+
+.icons img {
+	width:140px;
+	opacity:0;
+	-webkit-transform:translateY(140px);
+}
+
+@-webkit-keyframes icon-in {
+	0%{
+		opacity:0;
+		-webkit-transform:translateY(140px);	
+	}
+	40%{
+		opacity:1;
+	}
+	100%{
+		opacity:1;
+		-webkit-transform:translateY(0px);
+	}
+}
+
+.js-icons-animate{
+	-webkit-animation:icon-in 1s ease-out 1 forwards;
+}
+
+.js-icons-delay-1{
+	-webkit-animation-delay:100ms;
+}
+
+.js-icons-delay-2{
+	-webkit-animation-delay:200ms;
+}
+
+.tank-wrapper{
+	position:relative;
+	margin-bottom:2em;
+}
+
+.tank{
+	width:300px;
+	display:block;
+	margin:0 auto;
+}
+
+.fish{
+	position:absolute;
+	left:50%;
+	width:40px;
+	margin-left:-20px;
+	top:0px;
+
+	-webkit-animation:fish-swim 3s linear infinite;
+
+	-webkit-transform-origin:50% 90px;
+}
+
+@-webkit-keyframes fish-swim {
+	
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	
+	100%{
+		-webkit-transform:rotate(-360deg);
+	}
+}
+
+
 .page{
 	margin-top:2em;
 	padding:.5em;
@@ -170,6 +249,7 @@ dialog + .backdrop {
 }
 
 .page3{
+	padding-top:3em;
 	background-color:#E0403E;
 }
 
