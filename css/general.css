@@ -40,6 +40,10 @@ img {
 	width:100%;
 }
 
+span{
+	text-align:center;
+}
+
 .logo {
 	width: 30%;
 	display:block;
