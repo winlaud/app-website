@@ -40,11 +40,6 @@ img {
 	width:100%;
 }
 
-span{
-	text-align:center;
-	display:block;
-}
-
 .logo {
 	width: 30%;
 	display:block;
@@ -53,7 +48,9 @@ span{
 }
 
 span {
-	width:90%;
+	text-align:center;
+	display:block;
+	width:100%;
 	font-size:1.3em;
 }
 
